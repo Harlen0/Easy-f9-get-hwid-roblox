@@ -1,0 +1,7 @@
+local function getHWID()
+    local user = game:GetService("Players").LocalPlayer
+    local hwid = user.UserId .. "_" .. game:GetService("RbxAnalyticsService"):GetClientId()
+    return hwid
+end
+
+print("Seu HWID: ", getHWID())
